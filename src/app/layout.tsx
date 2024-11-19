@@ -1,4 +1,5 @@
 import "~/styles/globals.css";
+import { TopNav } from "./_components/topnav";
 
 import { ClerkProvider } from '@clerk/nextjs';
 
@@ -11,15 +12,6 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-function TopNav() {
-  return (
-    <nav className="flex items-center justify-between border-b flex-wrap p-6 text-xl font-semibold"> 
-    <div>T3 Gallery</div>
-
-    <div>Sign In</div>
-    </nav>
-  );
-}
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
