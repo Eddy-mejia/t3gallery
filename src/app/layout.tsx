@@ -1,5 +1,6 @@
 import "~/styles/globals.css";
-import { TopNav } from "./components/topnav";
+import {TopNav} from './components/topnav'; // Ensure correct casing matches the file
+
 
 import { ClerkProvider } from '@clerk/nextjs';
 
